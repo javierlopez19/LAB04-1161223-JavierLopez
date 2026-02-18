@@ -82,16 +82,40 @@ Console.WriteLine("El modelo de su nave es: " + modelo + "  " + "tiene una capac
     static void Ejercicio6()
     {
         Console.WriteLine("Este es el ejercicio 6");
-        double velocidadLuz = 299792.45834;
+        double velocidadLuz = 299792.458;
         string velocidad = velocidadLuz.ToString("N3");
         Console.WriteLine("La velocidad de la luz es: " + velocidad);
     }
     static void Ejercicio7()
     {
         Console.WriteLine("Este es el ejercicio 7");
+        Console.WriteLine("Ingrese el precio por galon de Litio: ");
+        string precioEntrada = Console.ReadLine();
+        double precio = Convert.ToDouble(precioEntrada);
+        double impuesto = precio * 0.12;
+        double precioTot = precio + impuesto;
+        int final = (int)precioTot;
+        Console.WriteLine("El precio final del galon de Litio con impuestos es: " + final);
+
+
     }
     static void Ejercicio8()
     {
         Console.WriteLine("Este es el ejercicio 8");
+        Console.WriteLine("░▐█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█▄☆");
+        Console.WriteLine("░███████████████████████");
+        Console.WriteLine("░▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▓▓▓▓◤");
+        Console.WriteLine("╬▀░▐▓▓▓▓▓▓▌▀█░░░█▀░");
+        Console.WriteLine("▒░░▓▓▓▓▓▓█▄▄▄▄▄█▀╬░");
+        Console.WriteLine("░░█▓▓▓▓▓▌░▒▒▒▒▒▒▒▒▒");
+        Console.WriteLine("░▐█▓▓▓▓▓░░▒▒▒▒▒▒▒▒▒");
+        Console.WriteLine("░▐██████▌╬░▒▒▒▒▒▒▒▒");
+
+        Console.WriteLine("Qué te gustaría o que harás el 14 de febrero?");
+        string febrero = Console.ReadLine();
+
+
+        Console.WriteLine("\n Estába curioso este ASCII, y lo que harás el 14 será: " + febrero);
+
     }
 }
